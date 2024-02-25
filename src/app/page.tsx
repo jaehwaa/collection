@@ -9,10 +9,13 @@ import { Collection } from "@/app/mocks/collections";
 import mockCollections from "@/app/mocks/collections";
 import Libraries from "@/app/Libraries";
 import Collections from "@/app/Collections";
+import ImageWrapper from "@/app/Image/ImageWrapper";
 
 export default function Home() {
   const [libraries, setLibraries] = useState(mockLibraries);
   const [collections, setCollections] = useState<Collection[]>(mockCollections);
+
+  return <ImageWrapper />;
 
   return (
     <main>
