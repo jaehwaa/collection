@@ -1,7 +1,6 @@
 "use client";
 
-import Image, { ImageComp } from "@/app/Image";
-import NextImage from "next/image";
+import Image from "@/app/Image";
 
 const ImageWrapper = () => {
   return (
@@ -11,7 +10,7 @@ const ImageWrapper = () => {
         {/*<div>*/}
         {salesEvents.map((event) => (
           <div key={event.id}>
-            <ImageComp
+            <Image
               src={`${event.thumbnailImage.image}1`}
               alt="thumbnail-image"
               width={200}
